@@ -1,4 +1,4 @@
-export interface IUserSearchHistory{
+export interface IUserSearchHistory {
     userId: string;
     content: string;
 }

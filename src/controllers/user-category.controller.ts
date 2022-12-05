@@ -33,10 +33,10 @@ export class UserCategoryController {
         }
     }
 
-    async get(req: CustomRequest, res: Response, next: NextFunction){
+    async get(req: CustomRequest, res: Response, next: NextFunction) {
         try {
             const data = await userCategoryService.getUserLikeCategories(req.params.id);
-            return responseSuccessWithData(res,data);
+            return responseSuccessWithData(res, data);
         } catch (error: any) {
             console.log(error);
             return responseError(res, error.message);

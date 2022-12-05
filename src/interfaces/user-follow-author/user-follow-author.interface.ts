@@ -1,4 +1,4 @@
-export interface IUserFollowAuthor{
+export interface IUserFollowAuthor {
     user: String,
     author: String
 }

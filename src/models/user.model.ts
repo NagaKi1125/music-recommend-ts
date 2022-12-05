@@ -2,7 +2,7 @@ import { Document, Schema, model } from 'mongoose';
 import { GENDER, ROLE, USER_STATUS } from '../common/constants';
 import { IUser } from '../interfaces/user/user.interface';
 
-export interface IUserModel extends IUser, Document {}
+export interface IUserModel extends IUser, Document { }
 
 const UserSchema: Schema = new Schema(
   {

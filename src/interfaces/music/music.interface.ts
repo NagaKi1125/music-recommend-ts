@@ -1,4 +1,4 @@
-export interface IMusic{
+export interface IMusic {
     url: String,
     name: String,
     category: String,

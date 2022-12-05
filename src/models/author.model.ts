@@ -6,7 +6,7 @@ export interface IAuthorModel extends IAuthor, Document { }
 const AuthorSchema: Schema = new Schema({
     name: { type: String, required: true },
     avatar: { type: Schema.Types.ObjectId, required: false, ref: 'picture' },
-    description: {type: String, required: false}
+    description: { type: String, required: false }
 }, {
     timestamps: true,
     versionKey: false,

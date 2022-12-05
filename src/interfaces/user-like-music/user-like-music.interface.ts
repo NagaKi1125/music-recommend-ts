@@ -1,4 +1,4 @@
-export interface IUserLikeMusic{
+export interface IUserLikeMusic {
     user: String,
     music: String
 }

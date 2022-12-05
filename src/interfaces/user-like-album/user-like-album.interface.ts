@@ -1,4 +1,4 @@
-export interface IUserLikeAlbum{
+export interface IUserLikeAlbum {
     user: String,
     album: String
 }

@@ -1,4 +1,4 @@
-export interface IListenHistory{
+export interface IListenHistory {
     user: String,
     music: String
 }

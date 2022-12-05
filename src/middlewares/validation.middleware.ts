@@ -13,10 +13,10 @@ export const handleValidation = (
       validateType === VALIDATION_TYPE.BODY
         ? req.body
         : validateType === VALIDATION_TYPE.QUERY
-        ? req.query
-        : validateType === VALIDATION_TYPE.PARAMS
-        ? req.params
-        : req.headers;
+          ? req.query
+          : validateType === VALIDATION_TYPE.PARAMS
+            ? req.params
+            : req.headers;
 
     const { error }: Joi.ValidationResult = schema.options({ presence }).validate(data, { abortEarly: false });
 
